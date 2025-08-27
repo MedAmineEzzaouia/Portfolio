@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export', // Comment out for development
+  output: 'export', // Enable static export for GitHub Pages
   images: { unoptimized: true },
-  // basePath: '/amine-portfolio', // Comment out for local development
-  // assetPrefix: '/amine-portfolio/', // Comment out for local development
+  basePath: '/Portfolio', // Your repository name
+  assetPrefix: '/Portfolio/', // Your repository name
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
-  // trailingSlash: true, // Comment out for development
+  trailingSlash: true, // Required for GitHub Pages
 }
 export default nextConfig
