@@ -317,6 +317,17 @@ const blogPosts: Record<string, BlogPost> = {
   },
 }
 
+// Required for static export - tells Next.js which blog slugs to pre-generate
+export async function generateStaticParams() {
+  // Get all the blog post slugs from the blogPosts object
+  const slugs = Object.keys(blogPosts)
+  
+  // Return array of params for each slug
+  return slugs.map((slug) => ({
+    slug: slug,
+  }))
+}
+
 export default function BlogPost() {
   const params = useParams()
   const slug = params.slug as string
