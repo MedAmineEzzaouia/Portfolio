@@ -100,7 +100,7 @@ export default function AboutSectionDesign2() {
                   <div className="relative inline-block mb-6">
                     <div className="w-32 h-32 rounded-3xl overflow-hidden border-4 border-primary/20 bg-gradient-to-br from-primary/10 to-secondary/10 mx-auto">
                       <Image
-                        src="/images/Amine-avatar.jpg"
+                        src="/images/Amine-avatar.png"
                         alt="Mohamed Amine"
                         width={128}
                         height={128}

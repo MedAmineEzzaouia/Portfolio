@@ -123,7 +123,7 @@ export default function LoadingScreen() {
               <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-primary/50 relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 animate-pulse" />
                 <Image
-                  src="/images/Amine-avatar.jpg"
+                  src="/images/Amine-avatar.png"
                   alt="Mohamed Amine Ezzaouia"
                   width={96}
                   height={96}

@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enable static export for GitHub Pages
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined, // Enable static export only for GitHub Pages
   images: { unoptimized: true },
-  basePath: '/Portfolio', // Your repository name
-  assetPrefix: '/Portfolio/', // Your repository name
+  basePath: process.env.NODE_ENV === 'production' ? '/Portfolio' : '', // Your repository name only in production
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Portfolio/' : '', // Your repository name only in production
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
-  trailingSlash: true, // Required for GitHub Pages
+  trailingSlash: process.env.NODE_ENV === 'production', // Required for GitHub Pages only in production
 }
 export default nextConfig

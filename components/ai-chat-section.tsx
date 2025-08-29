@@ -674,7 +674,7 @@ export default function AIChatSection() {
             <div className="relative">
               <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-primary/30 glow-effect">
                 <Image
-                  src="/images/Amine-avatar.jpg"
+                  src="/images/Amine-avatar.png"
                   alt="Mohamed Amine Ezzaouia"
                   width={96}
                   height={96}

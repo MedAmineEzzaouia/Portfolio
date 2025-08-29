@@ -104,7 +104,7 @@ export default function AboutSectionDesign1() {
                       <div className="relative">
                         <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-primary/30 bg-gradient-to-br from-primary/10 to-secondary/10">
                           <Image
-                            src="/images/Amine-avatar.jpg"
+                            src="/images/Amine-avatar.png"
                             alt="Mohamed Amine"
                             width={80}
                             height={80}

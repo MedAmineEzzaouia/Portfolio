@@ -1,21 +1,21 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Space_Grotesk } from "next/font/google"
+import { Poppins, Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import LoadingScreen from "@/components/loading-screen"
 
 // Optimized font loading with display swap for better performance
+const poppins = Poppins({ 
+  subsets: ["latin"], 
+  variable: "--font-poppins",
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700", "800"]
+})
+
 const inter = Inter({ 
   subsets: ["latin"], 
   variable: "--font-inter",
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700"]
-})
-
-const spaceGrotesk = Space_Grotesk({ 
-  subsets: ["latin"], 
-  variable: "--font-space",
   display: "swap",
   weight: ["300", "400", "500", "600", "700"]
 })
@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans bg-black text-white`}>
+      <body className={`${poppins.variable} ${inter.variable} font-sans bg-black text-white`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <LoadingScreen />
           {children}
